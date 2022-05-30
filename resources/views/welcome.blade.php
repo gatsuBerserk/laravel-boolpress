@@ -37,7 +37,12 @@
                          BoolTwit
                      </h1>
                  </div>
-                 <a class="btn btn-dark" href="{{url("/home")}}">Visualizza post</a>
+                 @if(Auth::check())
+                    <a class="btn btn-dark" href="{{url("/admin")}}">Visualizza post</a>
+                 @else
+                    <a class="btn btn-dark" href="{{url("/home")}}">Visualizza post</a>
+                 @endif
+                 
             </div>
             
         </div>

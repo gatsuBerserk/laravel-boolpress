@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid mt-5">
         <div class="row">
             <Post v-for="(post, index) in posts" :key="index"
              :post="post"/>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Post from "./Post.vue" 
+import Post from "../components/Post.vue" 
 export default {
     name:"Posts", 
     components:{

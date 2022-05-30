@@ -1,21 +1,21 @@
 <template>
   <div>
-     <Posts />
+    <Header/>
+    <Main/>
   </div>
 </template>
 
 <script>
-import Posts from "../components/Posts.vue"
+import Header from "../components/Header.vue"
+import Main from "../components/Main.vue"
+
 
 export default {
     name:"App",
-    data(){
-      return{
-        posts:[]
-      }
-    }, 
     components:{
-      Posts,
+      Header,
+      Main,
+     
 
     }
 }
